@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- SECURITY-SIMULATION | artifact: CAPTIVE-LAB-0.1.0-alpha.1
+Purpose: authorized commercial security assessment and educational use only.
+Requires written scope and authorization. No real credentials collected.
+This marker does not establish consent or legal compliance. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retro Lab Search</title>
+<style>
+  body{margin:0;background:#fff;color:#111;font:14px Arial,Helvetica,sans-serif;text-align:center}
+  .banner{padding:7px 10px;background:#fff1c7;border-bottom:1px solid #c9af5b;font-size:12px;font-weight:bold}
+  .top{width:min(760px,calc(100% - 24px));margin:12px auto 0;text-align:right;font-size:12px}
+  .top a{color:#0000cc}
+  main{width:min(680px,calc(100% - 24px));margin:80px auto 0}
+  h1{margin:0 0 9px;font-size:clamp(45px,9vw,72px);line-height:1;letter-spacing:-4px;font-weight:bold}
+  .b{color:#3366cc}.r{color:#cc3333}.y{color:#e5ad27}.g{color:#339966}
+  .era{margin:0 0 25px;color:#555;font-size:12px}
+  .box{padding:17px 14px 14px;background:#e8eefa;border:1px solid #c6d4ef}
+  .box label{display:block;margin-bottom:7px;font-size:16px}
+  .box input{display:block;width:min(470px,100%);height:27px;margin:0 auto 11px;padding:3px 6px;border:1px solid #777;border-radius:0;background:#fff;color:#111;font:16px Arial,Helvetica,sans-serif}
+  button{margin:0 3px;padding:5px 12px;border:1px solid #777;border-radius:2px;background:#eee;color:#111;font:13px Arial,Helvetica,sans-serif;cursor:pointer}
+  button:focus-visible,input:focus-visible{outline:2px solid #3366cc;outline-offset:2px}
+  .links{display:grid;grid-template-columns:repeat(3,1fr);margin-top:3px;gap:3px;text-align:center}
+  .links div{min-height:100px;padding:14px 9px;background:#f3f6fc;border:1px solid #dbe3f4;line-height:1.6}
+  .links strong{display:block;color:#163b7b}
+  .links span{color:#444;font-size:12px}
+  .result{min-height:25px;margin:18px auto 0;color:#245b36;font-weight:bold}
+  .note{margin:20px auto 0;max-width:540px;color:#555;font-size:12px;line-height:1.5}
+  footer{margin:70px 0 20px;color:#555;font-size:11px}
+  @media(max-width:520px){main{margin-top:45px}.links{grid-template-columns:1fr}.links div{min-height:auto}.top{text-align:center}footer{margin-top:35px}}
+</style>
+</head>
+<body>
+<div class="banner">OFFLINE WI-FI TRAINING PAGE — FICTIONAL SEARCH DEMO — NO SIGN-IN</div>
+<div class="top">Retro web practice · <a href="#about">About this page</a></div>
+<main>
+  <h1 aria-label="Retro Lab Search"><span class="b">R</span><span class="r">e</span><span class="y">t</span><span class="b">r</span><span class="g">o</span> <span class="r">L</span><span class="y">a</span><span class="b">b</span></h1>
+  <p class="era">A late-1990s-style search landing page for a closed-loop lesson</p>
+  <div class="box"><form id="practice" autocomplete="off"><label for="q">Search the pretend web</label><input id="q" type="search" maxlength="80" placeholder="Try: Wi-Fi lab"><button type="submit">Retro Lab Search</button><button type="button" id="sample">Try an example</button></form></div>
+  <div class="links"><div><strong>Practice Search</strong><span>See a local confirmation.<br>No request leaves this page.</span></div><div><strong>Old Web Style</strong><span>Simple layout, classic colors,<br>and a compact search box.</span></div><div><strong>Lab Only</strong><span>Built for one owned test phone<br>on an isolated network.</span></div></div>
+  <p id="result" class="result" role="status" aria-live="polite"></p>
+  <p id="about" class="note">This is an original training page, not Google or a real search service. It does not collect passwords or personal information. Search text is neither transmitted nor saved.</p>
+</main>
+<footer>© Retro Lab · Fictional Wi-Fi practice page</footer>
+<script>
+var q=document.getElementById('q'), result=document.getElementById('result');
+document.getElementById('practice').addEventListener('submit',function(e){e.preventDefault();result.textContent=q.value.trim()?'Practice complete. Nothing was sent or saved.':'Enter a practice word to continue.';});
+document.getElementById('sample').addEventListener('click',function(){q.value='Wi-Fi lab';result.textContent='Example ready. Select Retro Lab Search.';q.focus();});
+</script>
+</body>
+</html>

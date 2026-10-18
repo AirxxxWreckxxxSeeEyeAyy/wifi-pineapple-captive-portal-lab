@@ -1,0 +1,19 @@
+# Private evidence and local files
+.DS_Store
+.env
+.env.*
+*.mov
+*.mp4
+*.m4v
+*.pcap
+*.pcapng
+*.har
+*.log
+*.jsonl
+session.json
+recordings/
+captures/
+private/
+work/
+device-backups/
+node_modules/
