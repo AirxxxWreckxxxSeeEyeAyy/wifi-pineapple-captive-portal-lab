@@ -37,6 +37,10 @@ CHANGELOG.md
 LICENSE
 ```
 
+## Application security lessons
+
+- [SQL injection and parameterized queries](docs/security/SQL-INJECTION.md): understand unsafe SQL construction, walk through a SQLAlchemy example, and reproduce the fix with a local in-memory SQLite exercise. No Pineapple hardware is required.
+
 ## Prerequisites
 
 - Your own WiFi Pineapple Mark VII and management access.
